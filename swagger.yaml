@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: API de Biblioteca - Guía 6
+  version: 1.0.0
+  description: Documentación oficial de la API con seguridad y validaciones del SENA
+paths:
+  /:
+    get:
+      summary: Ruta de bienvenida
+      responses:
+        '200':
+          description: Mensaje de éxito de la API
+  /api/autores:
+    get:
+      summary: Obtener lista de autores
+      responses:
+        '200':
+          description: Lista de autores obtenida con éxito
+    post:
+      summary: Crear un autor nuevo
+      responses:
+        '201':
+          description: Autor creado correctamente
